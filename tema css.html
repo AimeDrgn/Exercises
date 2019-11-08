@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>HTML5</title>
+    <style>
+        body{
+            background: #CFB6AE;
+            /* font-size:16px; */
+            /*font-size:125%;*/
+        }
+        #page{
+            width: 1024px;
+            margin: 10px auto 0;
+
+            padding: 20px 10px;
+            background: #FFF000;
+            background: -moz-linear-gradient(top, #FFF000 0%, #A42496 64%, #4233FF 100%);
+            background: -webkit-linear-gradient(top, #FFF000 0%, #A42496 64%, #4233FF 100%);
+            background: linear-gradient(to bottom, #FFF000 0%, #A42496 64%, #4233FF 100%);
+        }
+        #page > header > nav > ul{
+            list-style: none;
+            margin:0 2px;
+            padding:5px;
+            /*  border: 1px solid #000;
+              border-left: 0;
+              border-right:0; */
+            background-color: lightpink;
+            border-radius: 64px 64px 64px 64px;
+            -moz-border-radius: 64px 64px 64px 64px;
+            -webkit-border-radius: 64px 64px 64px 64px;
+            border: 0px solid #000000;
+        }
+        #menu > ul li{
+            display: inline-block;
+            padding:5px;
+            margin: 15px 0;
+        }
+        #menu a,
+        #menu a:visited{
+            text-decoration: none;
+            color: #000000;
+        }
+        #menu a:hover{
+            text-decoration: underline;
+            color: rgb(255,0,0);
+        }
+        #logo{
+            /*font-size: 1.5rem;*/
+            font-size: 3em;
+            font-family: "Times New Roman", Times, serif; /* Serif, Sans serif */
+            margin: 15px;
+            padding:5px;
+
+
+
+        }
+        #logo::first-letter{
+            color: purple;
+            font-size: 2em;
+        }
+        #logo a,
+        #logo a:visited{
+            text-decoration: none;
+            color: #01549b;
+        }
+        #logo a:hover{
+            color:lightpink;
+        }
+
+        #page > footer{
+            clear:both;
+            border-style: none;
+        }
+        footer{
+
+            border-style: double;
+        }
+        #content{
+            float:left;
+            width:70%;
+            /*background:#ddd;*/
+            padding:2%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            /*margin:5%;*/
+            font-size:18px;
+        }
+        #content h1{
+            font-size:1.3em;
+            /*font-size:1.3rem;*/
+        }
+        #sidebar{
+            width:26%;
+            padding:2%;
+            float: right;
+            border-color: gray;
+            /*  border-style: dashed; */
+            background-color: #FFE3B8;
+            box-shadow: 5px 5px;
+
+
+
+        }
+
+        #page > footer > section {
+            float:right;
+            width: 48%;
+            box-sizing: border-box;
+            padding:1%;
+            margin:1%;
+        }
+        .box {
+            /* padding: 20px;
+             margin: 10px;
+             width: 300px;
+             border:2px solid #333;
+             background: white; */
+            width: 600px;
+            height: 180px;
+            padding: 15px;
+            background-color: lightpink;
+            box-shadow: 10px 10px;
+
+        }
+
+        li{
+            list-style: none;
+
+        }
+        .button{
+            background-color: mediumpurple;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+<div>
+    <section id="page"> <!-- centered with width 1024px -->
+        <header>
+            <div id="logo">
+                <a href="/">MOne</a> <!-- add an alterative logo in png format -->
+
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="main">
+            <article id="content" itemscope itemtype="https://schema.org/Article">
+                <header>
+                    <h1 itemprop="name">
+                        <span itemprop="headline">Article title</span>
+                    </h1>
+
+                    <div>
+                        <span>by: <span><strong itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">First Last</span></strong></span></span> | <!-- <b></b> -->
+                        <span>category: <em>Category</em></span> | <!-- <i></i> -->
+                        <span>date: <u itemprop="datePublished" content="2019-01-28">28 Jan '19</u></span> <!-- <span style="text-decoration:underline;"></span> -->
+                    </div>
+                </header>
+
+                <section>
+                    <p class="box">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />In et mi vel enim luctus aliquam eu in nisi. Donec bibendum neque nulla, at aliquet mauris volutpat a. Morbi egestas a arcu eget feugiat. Suspendisse potenti. Nulla semper et metus a eleifend. Sed venenatis lorem at fermentum tincidunt. Integer quis nisl porttitor, posuere nibh et, euismod neque.
+                    </p>
+
+                    <p class="box">
+                        Nunc vitae lacinia turpis, vel facilisis urna. Aliquam porta lorem lectus, in venenatis erat tempor quis. Donec orci lectus, maximus non scelerisque et, faucibus a magna. Nulla posuere venenatis est, sed euismod massa egestas a. Donec pellentesque semper eros ut blandit. Etiam commodo mollis nibh, a dignissim lacus efficitur vel. Vivamus sed arcu sed ipsum imperdiet tincidunt. Sed pellentesque purus id ipsum accumsan mollis. Donec mi nulla, porttitor et ex posuere, malesuada eleifend nulla. Nulla finibus magna et metus viverra gravida. Maecenas quis nulla malesuada, accumsan nunc sed, blandit nulla.
+                    </p>
+                    <ul>
+                        <li>One</li>
+                        <li>Two</li>
+                        <li>Three</li>
+                    </ul>
+                    <br style="clear:both" />
+                </section>
+                <footer>
+                    <section>
+                        <strong>Tags</strong>:
+                        <ul>
+                            <li>
+                                recent news
+                            </li>
+                            <li>
+                                article
+                            </li>
+                            <li>
+                                my opinion
+                            </li>
+                        </ul>
+                    </section>
+                </footer>
+            </article>
+            <aside id="sidebar">
+
+                <section>
+                    <h3>Recent Articles</h3>
+                    <ul>
+                        <li><a href="#" class="button" >First article</a></li>
+                        <li><a href="#" class="button" >Second article</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#" class="button">Category one</a></li>
+                        <li><a href="#" class="button">Category two</a></li>
+                    </ul>
+                    <h3>Really?</h3>
+                    <p>
+                        But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+                    </p>
+                    <h4>Why?</h4>
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+
+
+                </section>
+
+            </aside>
+            <!--<br style="clear:both;">-->
+        </section>
+        <footer>
+            <section>
+                <h3>About</h3>
+                <p>Donec pellentesque semper eros ut blandit. Etiam commodo mollis nibh, a dignissim lacus efficitur vel. Vivamus sed arcu sed ipsum imperdiet tincidunt. Sed pellentesque purus id ipsum accumsan mollis. </p>
+            </section>
+            <section>
+                <h3>Helpful links</h3>
+                <ul>
+                    <li>
+                        <a href="#">Terms and Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </section>
+        </footer>
+        <br style="clear:both">
+    </section>
+</div>
+</body>
+</html>

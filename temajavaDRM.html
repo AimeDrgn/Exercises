@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div>TODO write content</div>
+<div id="ex2"></div>
+<script type="text/javascript">
+
+    function square(a){
+        return a*a;
+
+
+    }
+    var c = square(10);
+    console.log(c);
+
+    function half(b){
+        return b/2;
+
+
+    }
+    var d = half(10);
+    console.log(d);
+
+    function percent(a,b){
+
+        return x = (b/(a/100));
+
+    }
+
+    console.log(percent(10,5));
+
+
+    function area(raza){
+        let π = 3.14;
+        return x = ((raza*raza)*π);
+
+    }
+
+    console.log(area(10));
+
+    //console.log("func: " + sum2Numbers)
+
+    function final(e){
+        //half(e)
+        var result = half(e);
+        // square(result)
+        var resultSquare = square(result);
+        //area(resultSquare)
+        var resultArea = area(resultSquare);
+        //percent(resultArea, resultSquare);
+        return x= percent(resultArea, resultSquare);
+
+    }
+    console.log(final(10));
+
+
+
+
+
+// Exercitiul 2
+
+
+        function myFunction(){
+
+        let ex2 = document.getElementById("ex2");
+//form
+
+        let form = document.createElement("form");
+//First Name
+        let first_name_label = document.createElement("label");
+        let first_name_label_text = document.createTextNode("Name");
+        first_name_label.setAttribute("for", "first_Name");
+        first_name_label.appendChild(first_name_label_text);
+
+        first_name_label.style.color = "blue";
+
+        let first_name_input = document.createElement("input");
+        first_name_input.setAttribute("id", "first_Name");
+        first_name_input.setAttribute("type" , "text");
+
+        let br = "br";
+
+        form.appendChild(first_name_label);
+        form.appendChild(document.createElement(br));
+        form.appendChild(first_name_input);
+
+//br
+
+        form.appendChild(document.createElement(br));
+        form.appendChild(document.createElement(br));
+
+//Email
+
+        let email_label = document.createElement("label");
+        let emailLabelText = document.createTextNode("Email");
+        email_label.setAttribute("for", "Email");
+        email_label.appendChild(emailLabelText);
+
+        email_label.style.color = "red";
+
+        let email_label_input = document.createElement("input");
+        email_label_input.setAttribute("id", "Email");
+        email_label_input.appendChild(email_label);
+
+        let text_label = document.createElement("label");
+        let text_label_text = document.createTextNode("Mesage");
+        text_label.setAttribute("for", "Mesage");
+        text_label.appendChild(text_label_text);
+
+        text_label.style.color = "yellow";
+
+        let text_label_textarea = document.createElement("textarea");
+        text_label_textarea.setAttribute("id", "textarea");
+        email_label_input.appendChild(text_label);
+
+        form.appendChild(email_label);
+        form.appendChild(document.createElement(br));
+        form.appendChild(email_label_input);
+
+        form.appendChild(document.createElement(br));
+        form.appendChild(document.createElement(br));
+
+        form.appendChild(text_label);
+        form.appendChild(document.createElement(br));
+        form.appendChild(text_label_textarea);
+
+        form.appendChild(document.createElement(br));
+
+        let submit_button = document.createElement("button");
+        submit_button.setAttribute("type", "submit");
+        submit_button.setAttribute("onClick", "submitClick()");
+
+        let submit_button_text_node = document.createTextNode("Trimite");
+        submit_button.appendChild(submit_button_text_node);
+
+        form.appendChild(submit_button);
+
+        ex2.appendChild(form);
+
+
+    }
+
+
+    myFunction();
+
+    function submitClick() {
+        alert("This is an alarm!");
+    }
+</script>
+
+</body>
+</html>

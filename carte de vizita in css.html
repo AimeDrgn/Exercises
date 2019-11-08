@@ -1,0 +1,196 @@
+<!Doctype html>
+<html xml:lang="ro" xmlns="http://www.w3.org/1999/html">
+<head>
+    <style type="text/css" media="all">
+     html{
+         font-size: 16px;
+     }
+        body {
+
+         background-color:gainsboro; }
+        /*    font-family: Harrington;
+            padding: 5px;
+            margin: 20px;} */
+
+
+
+
+
+        ul>li {
+
+            list-style: none;
+
+
+
+
+
+        }
+      a:link, a:visited {
+         background-color: purple;
+         color: white;
+         padding: 14px 25px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+     }
+     a:hover, a:active {
+         background-color: darkgreen;
+     }
+        img{
+            padding: 2px;
+            margin: 2px;
+            background-color: #f7ecb5;
+
+
+
+        }
+      /*  img:nth-of-type(1) {
+            transform: skewX(10deg) translateX(150px);
+            transform-origin: bottom left;
+
+        }
+        img:nth-of-type(2) {
+            transform: rotate(90deg) ;
+            transform-origin: bottom left; */
+
+
+
+        input[type] {
+            background-color: #e4b9b9;
+            width: 200px;
+            color: #2b542c;
+        }
+        article p::first-letter{
+            font-size: 65px;
+            float:left;
+            color: #d9534f;
+        }
+        article p::first-line{
+            color: #c12e2a;
+        }
+        p{
+            text-align: center;
+            font-size: 16px;
+            color: #014c8c;
+            padding: 16px;
+            margin:0;
+            border: 1px solid black;
+            background-color: silver;
+        }
+
+        h1 {
+            color: red;
+        }
+        h1:hover {
+            color: darkviolet;
+        }
+        h2 {
+            color: darkmagenta;
+        }
+        h2:hover{
+            color: red;
+        }
+        ul>li {
+            padding: 1.5px;
+            margin: 0px;
+            font-size: 20px;
+            font-family: "Gill Sans MT";
+            border: 0.5px solid pink;
+            text-align: center;
+            color: grey;
+            background-color: #f7ecb5;
+        }
+        #logo a,
+        #logo a:visited {
+            text-decoration: none;
+            color: black;
+        }
+
+     #page{
+         width: 1024px;
+         margin: 10px auto 0;
+         background-color:white;
+         padding: 25px 15px;
+     }
+     #content{
+         float:left;
+         width:40%;
+         background: lightpink;
+         padding:2%;
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         margin: 3%;
+     }
+        #form {
+            /*border: 1px solid black;
+            background-color: lightgray; */
+            padding: 2%;
+            margin: 1%;
+        }
+
+
+
+     </style>
+
+
+</head>
+
+<body>
+ <section id="page"> <!-- centered with width 1024px -->
+
+ <h1> CSS+CSS3</h1>
+
+<div itemscope itemtype="https://schema.org/Person">
+
+    <ul>
+        <li> <img  src="img/Crowne-Plaza.png" height="150" width="250" alt="Crowne Plaza" /></li>
+       <li itemprop="affiliation">Crowne Plaza Hotel</li>
+        <li itemprop="name">Dragomir Raluca Maria</li>
+        <li itemprop="jobTitle">Front Office Manager</li>
+        <li itemprop="telephone">Telephone number:0022-44-563</li>
+        <li itemprop="email">ralucamaria788@gmail.com</li>
+        <li><a itemprop="image" href="https://www.crowneplaza.com/hotels/gb/en/bucharest/buhrm/hoteldetail">Website</a> </li>
+
+    </ul>
+
+
+</div>
+<section>
+    <article id="content" itemscope itemtype="https://schema.org/Article">
+    <p>
+        Crowne Plaza is a multinational chain of full service, upscale hotels headquartered in the United Kingdom. It is catering to business travelers and to the meetings and conventions market. It forms part of the InterContinental Hotels Group family of brands, which include InterContinental Hotels & Resorts and Holiday Inn Hotels & Resorts, and operates in 52 countries with more than 420 hotels and 118,000 bedrooms,[1] usually located in city centers, resorts, coastal towns or near major airports.
+    </article>
+</section>
+   <hr>
+<h2>Formular</h2>
+<div>
+    <form id="form">
+       Nume: <input type="text" name="nume" required/>
+        Email:<input type="email"name="email"/><br/>
+        Telefon:<input type="tel" name="tel" placeholder="0040+"/><br>
+        Mesaj:<textarea name="mesaj" rows="10" cols="60"></textarea>
+        <br/>
+        <input type="submit" value="Send"/><span>
+        <input type="submit" value="Reset"/> </span>
+
+
+    </form>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</section>
+
+</body>
+
+</html>
